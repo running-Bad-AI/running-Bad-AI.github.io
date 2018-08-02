@@ -842,7 +842,7 @@ span.sb-caret { /* Caret Down */
 	color: #ffeeaa80;
 	margin-bottom: 0px;
 	display: inline-block;
-	padding: 0px;
+	padding: 10px;
 }
 #hero p {
 	position: relative;
