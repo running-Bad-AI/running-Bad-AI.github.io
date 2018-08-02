@@ -3391,25 +3391,7 @@ nav.pagination {
   opacity: 0;
 }
 
-#hero h2 {
-    position: relative;
-    top: 300px;
-    color: #ffeeaa80;
-    margin-bottom: 0px;
-    display: inline-block;
-    padding: 0px 200px 0px 200px;
-    vertical-align: middle;
-}
-#hero p {
-    position: relative;
-    top: 300px;
-    color: #ffeeaa80;
-    font-family: 'Georgia', serif, Helvetica, "Helvetica Neue", "Hiragino Sans GB", "Microsoft YaHei", "Source Han Sans CN", "WenQuanYi Micro Hei", Arial, sans-serif;
-    font-size: 18px;
-    display: inline-block;
-    padding: 0px 200px 0px 200px;
-    vertical-align: middle;
-}
+
 
 .entry .gist {
   background: #eee;
