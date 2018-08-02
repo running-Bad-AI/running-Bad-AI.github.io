@@ -50,8 +50,8 @@
 
 
 #hero h2 {
-    position: relative;
-    top: 300px;
+    position: absolute;
+    top: 600px;
     color: #ffeeaa80;
     margin-bottom: 0px;
     display: inline-block;

@@ -851,13 +851,13 @@ span.sb-caret { /* Caret Down */
 	padding-top: 0;
 }
 #hero h2 {
-	color: #ffeeaa80;
+	color: #151515;
 	margin-bottom: 20px;
 	display: inline-block;
 	padding: 14px;
 }
 #hero p {
-	color: #ffeeaa80;
+	color: #333;
 	font-family: 'Georgia', serif, Helvetica, "Helvetica Neue", "Hiragino Sans GB", "Microsoft YaHei", "Source Han Sans CN", "WenQuanYi Micro Hei", Arial, sans-serif;
 	font-size: 18px;
 	display: inline-block;
@@ -3392,6 +3392,26 @@ nav.pagination {
 }
 
 
+
+#hero h2 {
+    position: absolute;
+    top: 600px;
+    color: #ffeeaa80;
+    margin-bottom: 0px;
+    display: inline-block;
+    padding: 0px 200px 0px 200px;
+    vertical-align: middle;
+}
+#hero p {
+    position: relative;
+    top: 300px;
+    color: #ffeeaa80;
+    font-family: 'Georgia', serif, Helvetica, "Helvetica Neue", "Hiragino Sans GB", "Microsoft YaHei", "Source Han Sans CN", "WenQuanYi Micro Hei", Arial, sans-serif;
+    font-size: 18px;
+    display: inline-block;
+    padding: 0px 200px 0px 200px;
+    vertical-align: middle;
+}
 
 .entry .gist {
   background: #eee;
