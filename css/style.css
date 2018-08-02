@@ -837,13 +837,17 @@ span.sb-caret { /* Caret Down */
 	padding-top: 0;
 }
 #hero h2 {
-	color: #8a6d3b;
+	position: relative;
+	top: 400px;
+	color: #8a4c3b;
 	margin-bottom: 20px;
 	display: inline-block;
 	padding: 14px;
 }
 #hero p {
-	color: #333;
+	position: relative;
+	top: 400px;
+	color: #8a4c3b;
 	font-family: 'Georgia', serif, Helvetica, "Helvetica Neue", "Hiragino Sans GB", "Microsoft YaHei", "Source Han Sans CN", "WenQuanYi Micro Hei", Arial, sans-serif;
 	font-size: 18px;
 	display: inline-block;
