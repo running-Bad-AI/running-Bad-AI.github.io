@@ -20,7 +20,7 @@
 	display: none;
 }
 .pace .pace-progress {
-	background: #151515;
+	background: #8a6d3b;
 	position: fixed;
 	z-index: 2000;
 	top: 0;
@@ -72,7 +72,7 @@ p {
 	line-height: 30px;
 }
 i {
-	color: #151515;
+	color: #8a6d3b;
 }
 b, strong {
 	font-style: normal;
