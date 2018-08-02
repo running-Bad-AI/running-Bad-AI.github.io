@@ -3397,7 +3397,8 @@ nav.pagination {
     color: #ffeeaa80;
     margin-bottom: 0px;
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: bottom;
+    padding: 600px 0px 0px 0px
 }
 
 .entry .gist {
