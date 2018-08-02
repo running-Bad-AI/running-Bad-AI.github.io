@@ -857,6 +857,7 @@ span.sb-caret { /* Caret Down */
 	margin-bottom: 0px;
 	display: inline-block;
 	padding: 0px 200px 0px 200px;
+	vertical-align: middle;
 }
 #hero p {
 	position: relative;
@@ -866,6 +867,7 @@ span.sb-caret { /* Caret Down */
 	font-size: 18px;
 	display: inline-block;
 	padding: 0px 200px 0px 200px;
+	vertical-align: middle;
 }
 @media (max-width:1024px) {
 	#hero {
