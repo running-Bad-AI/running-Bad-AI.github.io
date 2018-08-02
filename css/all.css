@@ -34,7 +34,7 @@
 	display: none;
 }
 .pace .pace-progress {
-	background: #8a6d3b;
+	background: #151515;
 	position: fixed;
 	z-index: 2000;
 	top: 0;
@@ -86,7 +86,7 @@ p {
 	line-height: 30px;
 }
 i {
-	color: #8a6d3b;
+	color: #151515;
 }
 b, strong {
 	font-style: normal;
@@ -102,7 +102,7 @@ h6 {
     font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Hiragino Sans GB", "Microsoft YaHei", "Source Han Sans CN", "WenQuanYi Micro Hei", Arial, sans-serif;
 	font-weight: 400;
 	font-weight: normal;
-	color: #8a6d3b;
+	color: #151515;
 }
 h2 {
 	text-transform: uppercase;
@@ -851,7 +851,7 @@ span.sb-caret { /* Caret Down */
 	padding-top: 0;
 }
 #hero h2 {
-	color: #151515;
+	color: #8a6d3b;
 	margin-bottom: 20px;
 	display: inline-block;
 	padding: 14px;
