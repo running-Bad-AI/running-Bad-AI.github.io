@@ -1859,7 +1859,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #0b7dff;
+  background: #eefff7;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3045,6 +3045,18 @@ hr {
   border-left: 3px solid #ff1700;
   background-color: #f9f9f9;
   list-style: none;
+}
+.site-title {
+  display: inline-block;
+  vertical-align: top;
+  color: rgba(222,48,188,0.77);
+  font-size: 70px;
+  font-weight: 700;
+  font-family: monospace;
+  line-height: 70px;
+  letter-spacing: 2px;
+  padding-top: 10px;
+  text-shadow: 3px 0px 6px rgba(0,0,0,0.478);
 }
 @-moz-keyframes heartAnimate {
   0%, 100% {
