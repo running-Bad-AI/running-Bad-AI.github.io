@@ -1859,7 +1859,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff41ff;
+  background: #7fada6;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3004,8 +3004,7 @@ p.description {
   margin: 5px 30px;
 }
 img.img-topic {
-  width: 98%;
-  height: auto;
+  width: 100%;
 }
 ::-webkit-scrollbar {
   width: 10px;
@@ -3057,6 +3056,20 @@ hr {
   letter-spacing: 2px;
   padding-top: 10px;
   text-shadow: 3px 0px 6px rgba(0,0,0,0.478);
+}
+.out-img-topic {
+  display: block;
+  max-height: 1000px;
+  margin-bottom: 24px;
+  overflow: hidden;
+}
+img.img-topic {
+  display: block;
+  margin-left: 0.7em;
+  margin-right: 0.7em;
+  padding: 0;
+  float: right;
+  clear: right;
 }
 @-moz-keyframes heartAnimate {
   0%, 100% {
