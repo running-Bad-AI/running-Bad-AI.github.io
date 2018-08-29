@@ -1979,7 +1979,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #372e75;
+  background: #f2c2bf;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3315,6 +3315,20 @@ pre .addition {
 }
 pre .deletion {
   background: #ffeef0;
+}
+#rewardButton span {
+  display: inline-block;
+  width: 80px;
+  height: 35px;
+  color: #fff;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  font-size: 18px;
+  font-family: "Microsoft Yahei";
+  border-radius: 5px;
+  font-variant: normal;
+  background: #f44336;
 }
 @-moz-keyframes heartAnimate {
   0%, 100% {
