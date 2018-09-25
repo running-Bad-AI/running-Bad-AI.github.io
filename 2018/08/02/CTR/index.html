@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="推荐系统," />
 
 
 
@@ -86,17 +86,37 @@
 
 
 
-<meta name="description" content="朕的故事，岂是你等凡人能够窥探的？">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Utopia">
-<meta property="og:url" content="http://yoursite.com/about/index.html">
+<meta name="description" content="在计算广告领域点击率CTR和转化率CVR是衡量广告流量的两个关键指标.准确的估计CTR、CVR对于提高流量的价值, 增加广告收入有重要的指导作用.业界常用的方法有：人工特征+LR、GBDT+LR、FM、FFM、wide&amp;deep等">
+<meta name="keywords" content="推荐系统">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CTR常用模型">
+<meta property="og:url" content="http://yoursite.com/2018/08/02/CTR/index.html">
 <meta property="og:site_name" content="Utopia">
-<meta property="og:description" content="朕的故事，岂是你等凡人能够窥探的？">
+<meta property="og:description" content="在计算广告领域点击率CTR和转化率CVR是衡量广告流量的两个关键指标.准确的估计CTR、CVR对于提高流量的价值, 增加广告收入有重要的指导作用.业界常用的方法有：人工特征+LR、GBDT+LR、FM、FFM、wide&amp;deep等">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-08-06T16:08:08.000Z">
+<meta property="og:image" content="http://m.qpic.cn/psb?/V11gTDw825Ebrd/zYAuLjc2dU5X3mb5amdrYKcaWOtt91sKIANZAkObsmI!/b/dFQBAAAAAAAA&bo=xQIWAQAAAAADB*I!&rf=viewer_4">
+<meta property="og:image" content="http://m.qpic.cn/psb?/V11gTDw825Ebrd/geqFCrrIpVSji45prYv4mw6vIs18BEM4IEMlG6cNPZ4!/b/dDIBAAAAAAAA&bo=XgPsAQAAAAADB5I!&rf=viewer_4">
+<meta property="og:image" content="http://m.qpic.cn/psb?/V11gTDw825Ebrd/aQyweLiS1jJEBmZm*gy4oWfN6zupHNOm7THRsnw3KnA!/b/dDMBAAAAAAAA&bo=GwMyAgAAAAADBwo!&rf=viewer_4">
+<meta property="og:image" content="http://m.qpic.cn/psb?/V11gTDw825Ebrd/sug*WUn4r2kVBuuQ*KzOvhjzm9D7vC0K7whYVB4w.fQ!/b/dDYBAAAAAAAA&bo=RQK7AQAAAAARB80!&rf=viewer_4">
+<meta property="og:image" content="http://m.qpic.cn/psb?/V11gTDw825Ebrd/SptB7ozT2bJj5N4ABMX.aiEkQhXmpFOqgcVMk5C35yg!/b/dDMBAAAAAAAA&bo=HwMBAQAAAAADBz4!&rf=viewer_4">
+<meta property="og:image" content="http://m.qpic.cn/psb?/V11gTDw825Ebrd/O6.MO8O94qhApXbX8F2frSnakd9MQiR1mTCDTI5QVvw!/b/dDMBAAAAAAAA&bo=JQPsAAAAAAADB.g!&rf=viewer_4">
+<meta property="og:image" content="http://m.qpic.cn/psb?/V11gTDw825Ebrd/VlohgFzqEmGGWf0DQhUA1Jhv5VUc*ROUzUCPtkUxW0I!/b/dDQBAAAAAAAA&bo=IgO9AAAAAAARB6w!&rf=viewer_4">
+<meta property="og:image" content="http://m.qpic.cn/psb?/V11gTDw825Ebrd/0Sfq8rBU8IYR8tRgFvVTxfrQ*FwetOJuMpycmqwiXPU!/b/dFMBAAAAAAAA&bo=IAOXAQAAAAARB4U!&rf=viewer_4">
+<meta property="og:image" content="http://m.qpic.cn/psb?/V11gTDw825Ebrd/Ba.qoOPCKgahY*tlu8CdtDc6Kr5*B7HjfA7EPR*D3Tg!/b/dGYBAAAAAAAA&bo=IAO8AQAAAAARB64!&rf=viewer_4">
+<meta property="og:image" content="http://m.qpic.cn/psb?/V11gTDw825Ebrd/AoMMMj7ro176OSBDLd6krmaT2KJyADUfmEs*JlMSobo!/b/dDIBAAAAAAAA&bo=IwPKAQAAAAARB9s!&rf=viewer_4">
+<meta property="og:image" content="http://m.qpic.cn/psb?/V11gTDw825Ebrd/cLxqNu.PkQt5r*6vK36fSAwjXWnRRSByUbuiaOzmR9c!/b/dFIBAAAAAAAA&bo=KQItAQAAAAADByU!&rf=viewer_4">
+<meta property="og:image" content="http://m.qpic.cn/psb?/V11gTDw825Ebrd/DoRipiRSMxYVuFdBNjx*StS15k*DNwP8XH7kGcS9Ey0!/b/dFUAAAAAAAAA&bo=QAZkAQAAAAADBwE!&rf=viewer_4">
+<meta property="og:image" content="http://m.qpic.cn/psb?/V11gTDw825Ebrd/YA2NARAKI3oOx5jBGfUvXpcoSJ3182GhuelN66wlJNA!/b/dFMBAAAAAAAA&bo=HQMPAgAAAAADBzE!&rf=viewer_4">
+<meta property="og:image" content="http://m.qpic.cn/psb?/V11gTDw825Ebrd/e.BN8fauM33YJ0WJnvooHipCbDdqOb8l1ePec32TuQU!/b/dDUBAAAAAAAA&bo=FgM3AgAAAAADBwI!&rf=viewer_4">
+<meta property="og:image" content="http://m.qpic.cn/psb?/V11gTDw825Ebrd/vr2nzMbN8XGAk7RmTlfjJSK2sBTWV2osYaqn6Fw9.YI!/b/dFMBAAAAAAAA&bo=6gHhAAAAAAADByg!&rf=viewer_4">
+<meta property="og:image" content="http://m.qpic.cn/psb?/V11gTDw825Ebrd/3bPN9J3Axh9PJ6se3DnGRQHD6Divqx9FWsg4qn.KKCs!/b/dDMBAAAAAAAA&bo=XgRNAQAAAAADBzQ!&rf=viewer_4">
+<meta property="og:image" content="http://m.qpic.cn/psb?/V11gTDw825Ebrd/bCGXbrsH2Mgj2MlCXAwKC5gJuhRkJWtLbvL*cf3xUjU!/b/dFkAAAAAAAAA&bo=yQGfAAAAAAADB3U!&rf=viewer_4">
+<meta property="og:image" content="http://m.qpic.cn/psb?/V11gTDw825Ebrd/tXipgLEgJKomzlgthw91qJcOzjGReLxiyjguPdYYmaY!/b/dFQBAAAAAAAA&bo=JwIAAQAAAAADBwY!&rf=viewer_4">
+<meta property="og:updated_time" content="2018-09-25T14:31:25.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Utopia">
-<meta name="twitter:description" content="朕的故事，岂是你等凡人能够窥探的？">
+<meta name="twitter:title" content="CTR常用模型">
+<meta name="twitter:description" content="在计算广告领域点击率CTR和转化率CVR是衡量广告流量的两个关键指标.准确的估计CTR、CVR对于提高流量的价值, 增加广告收入有重要的指导作用.业界常用的方法有：人工特征+LR、GBDT+LR、FM、FFM、wide&amp;deep等">
+<meta name="twitter:image" content="http://m.qpic.cn/psb?/V11gTDw825Ebrd/zYAuLjc2dU5X3mb5amdrYKcaWOtt91sKIANZAkObsmI!/b/dFQBAAAAAAAA&bo=xQIWAQAAAAADB*I!&rf=viewer_4">
 
 
 
@@ -126,13 +146,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/about/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/08/02/CTR/"/>
 
 
 
 
 
-  <title> | Utopia</title>
+  <title>CTR常用模型 | Utopia</title>
   
 
 
@@ -304,33 +324,356 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/02/CTR/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="wang yang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Utopia">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline"></h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <script src="/assets/js/APlayer.min.js"> </script><h1 id="朕的故事，岂是你等凡人能够窥探的？"><a href="#朕的故事，岂是你等凡人能够窥探的？" class="headerlink" title="朕的故事，岂是你等凡人能够窥探的？"></a>朕的故事，岂是你等凡人能够窥探的？</h1>
+          <h1 class="post-title" itemprop="name headline">CTR常用模型</h1>
         
-      </div>
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-02T00:57:27+08:00">
+                2018-08-02
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/推荐系统/" itemprop="url" rel="index">
+                    <span itemprop="name">推荐系统</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2018/08/02/CTR/" class="leancloud_visitors" data-flag-title="CTR常用模型">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+              <div class="post-description">
+                  在计算广告领域点击率CTR和转化率CVR是衡量广告流量的两个关键指标.准确的估计CTR、CVR对于提高流量的价值, 增加广告收入有重要的指导作用.业界常用的方法有：人工特征+LR、GBDT+LR、FM、FFM、wide&deep等
+              </div>
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <script src="/assets/js/APlayer.min.js"> </script><p class="description"></p>
+
+<a id="more"></a>
+<h1 id="FM-FFM"><a href="#FM-FFM" class="headerlink" title="FM/FFM"></a>FM/FFM</h1><h2 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h2><p>在计算广告领域点击率CTR和转化率CVR是衡量广告流量的两个关键指标.准确的估计CTR、CVR对于提高流量的价值, 增加广告收入有重要的指导作用.<br>预估CTR或CVR, 业界常用的方法有：<br>–人工特征+LR<br>–GBDT+LR<br>–FM<br>–FFM</p>
+<hr>
+<ol>
+<li>LR模型优缺点:<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">优点：</span><br><span class="line">--算法简单, 易并行和工程化, 可以处理高纬度稀疏问题, 模型可解释性强, 通过ftrl算法方便实时对online模型进行更新</span><br><span class="line">缺点：</span><br><span class="line">--需要大量特征工程预先分析出有效的特征、特征组合, 从而去间接增强LR的非线性学习能力, 但又无法直接通过特征笛卡尔积解决, 只能依靠人工经验, 耗时耗力同时并不一定会带来效果提升</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<hr>
+<ol start="2">
+<li>二阶多项式模型:</li>
+</ol>
+<p>线性模型只考虑了单一特征对预测结果的影响, 没有考虑特征组合对结果的影响.常用的特征组合方式是多项式模型：</p>
+<p><img src="http://m.qpic.cn/psb?/V11gTDw825Ebrd/zYAuLjc2dU5X3mb5amdrYKcaWOtt91sKIANZAkObsmI!/b/dFQBAAAAAAAA&amp;bo=xQIWAQAAAAADB*I!&amp;rf=viewer_4" alt="multinomial"></p>
+<p>那么, 如何解决二次项参数的训练问题呢？矩阵分解提供了一种解决思路.在model-based的协同过滤中, 一个rating矩阵可以分解为user矩阵和item矩阵, 每个user和item都可以采用一个隐向量表示</p>
+<p><img src="http://m.qpic.cn/psb?/V11gTDw825Ebrd/geqFCrrIpVSji45prYv4mw6vIs18BEM4IEMlG6cNPZ4!/b/dDIBAAAAAAAA&amp;bo=XgPsAQAAAAADB5I!&amp;rf=viewer_4" alt="mf"></p>
+<hr>
+<ol start="3">
+<li>FM模型:</li>
+</ol>
+<p><img src="http://m.qpic.cn/psb?/V11gTDw825Ebrd/aQyweLiS1jJEBmZm*gy4oWfN6zupHNOm7THRsnw3KnA!/b/dDMBAAAAAAAA&amp;bo=GwMyAgAAAAADBwo!&amp;rf=viewer_4" alt="fm"></p>
+<p>FM二次项化简过程如下：</p>
+<p><img src="http://m.qpic.cn/psb?/V11gTDw825Ebrd/sug*WUn4r2kVBuuQ*KzOvhjzm9D7vC0K7whYVB4w.fQ!/b/dDYBAAAAAAAA&amp;bo=RQK7AQAAAAARB80!&amp;rf=viewer_4" alt="derivative"></p>
+<p>最终, 采用SGD训练模型, 模型各个参数的梯度更新公式如下:</p>
+<p><img src="http://m.qpic.cn/psb?/V11gTDw825Ebrd/SptB7ozT2bJj5N4ABMX.aiEkQhXmpFOqgcVMk5C35yg!/b/dDMBAAAAAAAA&amp;bo=HwMBAQAAAAADBz4!&amp;rf=viewer_4" alt="sgd"></p>
+<hr>
+<ol start="4">
+<li>FFM模型:</li>
+</ol>
+<p>FFM（Field-aware Factorization Machine）最初的概念来自Yu-Chin Juan（阮毓钦, 毕业于中国台湾大学, 现在美国Criteo工作）与其比赛队员, 是他们借鉴了来自Michael Jahrer的论文的field概念提出了FM的升级版模型.通过引入field的概念, FFM把相同性质的特征归于同一个field.</p>
+<p><img src="http://m.qpic.cn/psb?/V11gTDw825Ebrd/O6.MO8O94qhApXbX8F2frSnakd9MQiR1mTCDTI5QVvw!/b/dDMBAAAAAAAA&amp;bo=JQPsAAAAAAADB.g!&amp;rf=viewer_4" alt="FFM"></p>
+<hr>
+<ol start="5">
+<li>FM在深度学习中的应用:</li>
+</ol>
+<p>深度学习目前应用现状:<br>–深度学习目前比较成熟的应用主要集中在：机器视觉、语音识别、自然语言处理这些课题上, 这些应用领域的共同特点是它们的数据集是连续的.<br>–但在推荐系统、广告展示及搜索领域, 这些领域的数据集大部分是Multi-field Categorical类型的, 主要呈现以下特征：有多个域, 每个域上的数据以ID格式呈现.Multi-field Categorical Data与上述这些连续或是序列数据是有区别的, Multi-field Categorical Data会有多种不同的字段, 那这样就很难识别这些特征之间的关系, 需要消耗大量人力做一些高阶特征组合.<br>–如果直接用One-Hot Binary进行编码, 那输入特征至少有一百万, 第一层至少需要500个节点, 那么第一层我们就需要训练5亿个参数, 那就需要20亿或是50亿的数据集, 而要获得如此大的数据集基本上是很困难的事情</p>
+<p>因为上述原因, 我们需要将非常大的特征向量嵌入到低维向量空间中来减小模型复杂度, 而FM无疑是被业内公认为最有效的embedding model</p>
+<p><img src="http://m.qpic.cn/psb?/V11gTDw825Ebrd/VlohgFzqEmGGWf0DQhUA1Jhv5VUc*ROUzUCPtkUxW0I!/b/dDQBAAAAAAAA&amp;bo=IgO9AAAAAAARB6w!&amp;rf=viewer_4" alt="FM embedding"></p>
+<p>–第一部分仍然为Logistic Regression<br>–第二部分是通过两两向量之间的点积来判断特征向量之间和目标变量之间的关系</p>
+<p>我们就基于这个模型来考虑神经网络模型, 其实这个模型本质上就是一个三层网络：</p>
+<p><img src="http://m.qpic.cn/psb?/V11gTDw825Ebrd/0Sfq8rBU8IYR8tRgFvVTxfrQ*FwetOJuMpycmqwiXPU!/b/dFMBAAAAAAAA&amp;bo=IAOXAQAAAAARB4U!&amp;rf=viewer_4" alt="FM architecture"></p>
+<p>FM = LR+ embedding<br>可以看成底层为特征维度为n的离散输入, 经过embedding层后, 对embedding层线性部分（LR）和非线性部分（特征交叉部分）累加后输出.</p>
+<hr>
+<ol start="6">
+<li>FNN模型:</li>
+</ol>
+<p>用FM算法对底层field进行embeddding, 在此基础上面建模就是FNN(Factorisation-machine supported Neural Networks)模型:<br>–FNN假设每个field有且只有一个值为1, 其他均为0.x为原始输入的特征, 它是大规模离散稀疏的.它可以分成n个field, 每一个field中, 只有一个值为1, 其余都为0(即one hot)</p>
+<p>网络结构如下:</p>
+<p><img src="http://m.qpic.cn/psb?/V11gTDw825Ebrd/Ba.qoOPCKgahY*tlu8CdtDc6Kr5*B7HjfA7EPR*D3Tg!/b/dGYBAAAAAAAA&amp;bo=IAO8AQAAAAARB64!&amp;rf=viewer_4" alt="FNN"></p>
+<p>FNN具有以下几个特点：</p>
+<ul>
+<li>FM参数需要预训练:<br>–FM部分的embedding需要预先进行训练, 所以FNN不是一个end-to-end模型.</li>
+<li>无法拟合低阶特征:<br>–FM得到的embedding向量直接concat连接之后作为MLP的输入去学习高阶特征表达, 最终的DNN输出作为ctr预估值.因此, FNN对低阶信息的表达比较有限.</li>
+<li>每个field只有一个非零值的强假设:<br>–FNN假设每个fileld只有一个值为非零值, 如果是稠密原始输入, 则FNN失去意义.对于一个fileld有几个非零值的情况, 例如用户标签可能有多个, 一般可以做average/sum/max等处理.</li>
+</ul>
+<p>FNN = LR + DEEP = LR + embedding + MLP</p>
+<hr>
+<ol start="7">
+<li>PNN模型:</li>
+</ol>
+<p>FNN的embedding层直接concat连接后输出到MLP中去学习高阶特征. PNN, 全称为Product-based Neural Network, 认为在embedding输入到MLP之后学习的交叉特征表达并不充分, 提出了一种product layer的思想, 既基于乘法的运算来体现体征交叉的DNN网络结构, 如图所示.</p>
+<p><img src="http://m.qpic.cn/psb?/V11gTDw825Ebrd/AoMMMj7ro176OSBDLd6krmaT2KJyADUfmEs*JlMSobo!/b/dDIBAAAAAAAA&amp;bo=IwPKAQAAAAARB9s!&amp;rf=viewer_4" alt="PNN"></p>
+<p>对比FNN网络, PNN的区别在于中间多了一层Product Layer层, 除了Product layer不同, PNN和FNN的MLP结构是一样的:<br>–Product Layer层由两部分组成, 左边z为embedding层的线性部分, 右边为embedding层的特征交叉部分.<br>–这种product思想来源于, 在ctr预估中, 认为特征之间的关系更多是一种and“且”的关系, 而非add”加”的关系.例如, 性别为男且喜欢游戏的人群, 比起性别男和喜欢游戏的人群, 前者的组合比后者更能体现特征交叉的意义.<br>–根据product的方式不同, 可以分为inner product(IPNN)(点乘)和outer product(OPNN)(矩阵乘法).</p>
+<p><img src="http://m.qpic.cn/psb?/V11gTDw825Ebrd/cLxqNu.PkQt5r*6vK36fSAwjXWnRRSByUbuiaOzmR9c!/b/dFIBAAAAAAAA&amp;bo=KQItAQAAAAADByU!&amp;rf=viewer_4" alt="inner-outer"></p>
+<hr>
+<ol start="8">
+<li>Wide&amp;Deep模型:</li>
+</ol>
+<p>前面介绍的两种变体DNN结构FNN和PNN, 都在embedding层对输入做处理后输入MLP, 让神经网络充分学习特征的高阶表达, deep部分是有了, 对高阶的特征学习表达较强, 但wide部分的表达是缺失的,  模型对于低阶特征的表达却比较有限.<br>google在2016年提出了大名鼎鼎的wide&amp;Deep的结构正是解决了这样的问题.<br>Wide&amp;deep结合了wide模型的优点和deep模型的优点, 网络结构如图所示, wide部分是LR模型, Deep部分是DNN模型.</p>
+<p><img src="http://m.qpic.cn/psb?/V11gTDw825Ebrd/DoRipiRSMxYVuFdBNjx*StS15k*DNwP8XH7kGcS9Ey0!/b/dFUAAAAAAAAA&amp;bo=QAZkAQAAAAADBwE!&amp;rf=viewer_4" alt="wide&amp;deep"></p>
+<p>在这个经典的wide&amp;deep模型中, google提出了两个概念, generalization（泛化性）和memory（记忆性）.</p>
+<ul>
+<li>Memory（记忆性）<br>–wide部分长处在于学习样本中的高频部分, 优点是模型的记忆性好, 对于样本中出现过的高频低阶特征能够用少量参数学习；缺点是模型的泛化能力差, 例如对于没有见过的ID类特征, 模型学习能力较差.</li>
+<li>Generalization（泛化性）<br>–deep部分长处在于学习样本中的长尾部分, 优点是泛化能力强, 对于少量出现过的样本甚至没有出现过的样本都能做出预测（非零的embedding向量）; 缺点是模型对于低阶特征的学习需要用较多参才能等同wide部分效果, 而且泛化能力强某种程度上也可能导致过拟合出现bad case.</li>
+</ul>
+<p>除此之外, wide&amp;deep模型还有如下特点:</p>
+<ul>
+<li>人工特征工程<br>–LR部分的特征, 仍然需要人工设计才能保证一个不错的效果.因为LR部分是直接作为最终预测的一部分, 如果作为wide部分的LR特征工程做的不够完善, 将影响整个wide&amp;deep的模型精度.</li>
+<li>联合训练<br>–模型是end-to-end结构, wide部分和deep部分是联合训练的.</li>
+<li>embedding层deep部分单独占有<br>–LR部分直接作为最后输出, 因此embedding层是deep部分独有的.</li>
+</ul>
+<p>wide&amp;deep = LR + embedding + MLP</p>
+<hr>
+<p>9.DeepFM模型:</p>
+<p>google提出的wide&amp;deep框架固然强大, 但由于wide部分是个LR模型, 仍然需要人工特征工程.</p>
+<p>但wide&amp;deep给整个学术界和工业界提供了一种框架思想.基于这种思想, 华为诺亚方舟团队结合FM相比LR的特征交叉的功能, 将wide&amp;deep部分的LR部分替换成FM来避免人工特征工程, 于是有了deepFM, 网络结构如图所示:</p>
+<p><img src="http://m.qpic.cn/psb?/V11gTDw825Ebrd/YA2NARAKI3oOx5jBGfUvXpcoSJ3182GhuelN66wlJNA!/b/dFMBAAAAAAAA&amp;bo=HQMPAgAAAAADBzE!&amp;rf=viewer_4" alt="DeepFM"></p>
+<p>比起wide&amp;deep的LR部分, deeFM采用FM作为wide部分的输出, FM部分如图所示:</p>
+<p><img src="http://m.qpic.cn/psb?/V11gTDw825Ebrd/e.BN8fauM33YJ0WJnvooHipCbDdqOb8l1ePec32TuQU!/b/dDUBAAAAAAAA&amp;bo=FgM3AgAAAAADBwI!&amp;rf=viewer_4" alt="fm part"></p>
+<p><img src="http://m.qpic.cn/psb?/V11gTDw825Ebrd/vr2nzMbN8XGAk7RmTlfjJSK2sBTWV2osYaqn6Fw9.YI!/b/dFMBAAAAAAAA&amp;bo=6gHhAAAAAAADByg!&amp;rf=viewer_4" alt="fm formula"></p>
+<p>ps: 注意图中的红线部分, 是权重为1的连接, 而不是像MLP中需要学习的权重连接, 最后wide(fm)部分的输出仅仅是一个数和deep(dnn)部分合到一起做sigmoid !!!</p>
+<p>除此之外, deepFM还有如下特点：</p>
+<ul>
+<li>低阶特征表达<br>–wide部分取代WDL的LR, 比FNN和PNN相比能捕捉低阶特征信息.</li>
+<li>embedding层共享<br>–wide&amp;deep部分的embedding层得需要针对deep部分单独设计；而在deepFM中, FM和DEEP部分共享embedding层, FM训练得到的参数既作为wide部分的输出, 也作为DNN部分的输入.</li>
+<li>end-end训练<br>–embedding和网络权重联合训练, 无需预训练和单独训练</li>
+</ul>
+<p>deepFM = FM + embedding + DNN</p>
+<p>同样是利用FM做embedding降维, 下面是几种模型的比较:</p>
+<p><img src="http://m.qpic.cn/psb?/V11gTDw825Ebrd/3bPN9J3Axh9PJ6se3DnGRQHD6Divqx9FWsg4qn.KKCs!/b/dDMBAAAAAAAA&amp;bo=XgRNAQAAAAADBzQ!&amp;rf=viewer_4" alt="cmp1"></p>
+<p><img src="http://m.qpic.cn/psb?/V11gTDw825Ebrd/bCGXbrsH2Mgj2MlCXAwKC5gJuhRkJWtLbvL*cf3xUjU!/b/dFkAAAAAAAAA&amp;bo=yQGfAAAAAAADB3U!&amp;rf=viewer_4" alt="cmp2"></p>
+<p>embedding vector这层的融合是深度学习模型改造最多的地方，该层是进入深度学习模型的输入层，embedding融合的质量将影响DNN模型学习的好坏.</p>
+<p>常用的融合方式有以下几种：</p>
+<p><img src="http://m.qpic.cn/psb?/V11gTDw825Ebrd/tXipgLEgJKomzlgthw91qJcOzjGReLxiyjguPdYYmaY!/b/dFQBAAAAAAAA&amp;bo=JwIAAQAAAAADBwY!&amp;rf=viewer_4" alt="cmp3"></p>
+<hr>
+<ol start="10">
+<li>模型超参数设置:<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">1、dropout,业内认为0.5是比较好的值</span><br><span class="line">2、最佳的隐层层数, 隐层层数并不是越多越好, 层数过多的模型会出现过拟合效应, 这个隐层数是跟数据集大小相关, 一般而言数据集越大所需要的隐层就越多, 我们这里模型显示的最佳隐层是3层</span><br><span class="line">3、神经网络不同层级节点数目的分布, 一下有四种不同的层级节点分布形态, 结果发现constant 和 diamond 这两种形态的表现效果比较好, increasing形态效果最差, 说明我们不应该在第一层就过度压缩特征向量</span><br><span class="line">4、不同隐层节点的Activation Functions的效果, 结果发现tanh 和 relu明显优于sigmoid</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<hr>
+<ol start="11">
+<li>Reference:<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">FM原理推导: https://www.cnblogs.com/pinard/p/6370127.html</span><br><span class="line">深入FFM原理与实践: https://tech.meituan.com/deep_understanding_of_ffm_principles_and_practices.html</span><br><span class="line">wide&amp;deep: https://ai.googleblog.com/2016/06/wide-deep-learning-better-together-with.html</span><br><span class="line">GBDT+LR: https://blog.csdn.net/shine19930820/article/details/71713680</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<hr>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="110" src="//music.163.com/outchain/player?type=0&id=2242982398&auto=1&height=90"></iframe>
+
+<hr>
+
       
     </div>
     
     
     
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>欢迎加好友</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechat1.jpeg" alt="wang yang 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    wang yang
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://yoursite.com/2018/08/02/CTR/" title="CTR常用模型">http://yoursite.com/2018/08/02/CTR/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/推荐系统/" rel="tag"><i class="fa fa-tag"></i> 推荐系统</a>
+          
+        </div>
+      
+
+      
+      
+        <div class="post-widgets">
+        
+
+        
+
+        
+          
+          <div id="needsharebutton-postbottom">
+            <span class="btn">
+              <i class="fa fa-share-alt" aria-hidden="true"></i>
+            </span>
+          </div>
+        
+        </div>
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/08/02/4/" rel="prev" title="4">
+                4 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
@@ -492,7 +835,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#朕的故事，岂是你等凡人能够窥探的？"><span class="nav-number">1.</span> <span class="nav-text">朕的故事，岂是你等凡人能够窥探的？</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#FM-FFM"><span class="nav-number">1.</span> <span class="nav-text">FM/FFM</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#摘要"><span class="nav-number">1.1.</span> <span class="nav-text">摘要</span></a></li></ol></li></ol></div>
             
 
           </div>
