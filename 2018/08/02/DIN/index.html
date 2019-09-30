@@ -2,147 +2,89 @@
 
 
 
-  
 
 
-<html class="theme-next muse use-motion" lang="zh-Hans">
+<html lang="zh-CN">
 <head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 3.7.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png?v=7.4.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png?v=7.4.0">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png?v=7.4.0">
+  <link rel="mask-icon" href="/images/logo.svg?v=7.4.0" color="#222">
+  <link rel="manifest" href="/images/site.webmanifest">
+  <meta name="msapplication-config" content="/images/browserconfig.xml">
 
+<link rel="stylesheet" href="/css/main.css?v=7.4.0">
 
-
-  
-  
-    
-    
+<link rel="stylesheet" href="https://fonts.loli.net/css?family=Han Kaiti:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="/lib/pace/pace-theme-center-atom.min.css?v=1.0.2">
   <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
-  <link href="/lib/pace/pace-theme-center-atom.min.css?v=1.0.2" rel="stylesheet">
 
 
-
-
-
-
-
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
-
-
-
-
-
-
-
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
-
-<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
-
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
-
-
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
-
-
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
-
-
-  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
-
-
-
-
-
-  <meta name="keywords" content="推荐系统," />
-
-
-
-
-
-
-
-
-
-
-<meta name="description" content="深度兴趣网络(DIN,Deep Interest Network)该方法由阿里妈妈的精准定向检索及基础算法团队提出, 针对电子商务领域(e-commerce industry), 充分利用/挖掘用户历史行为数据中的信息来提高CTR预估的性能.">
-<meta name="keywords" content="推荐系统">
-<meta property="og:type" content="article">
-<meta property="og:title" content="深度兴趣网络(DIN,Deep Interest Network)">
-<meta property="og:url" content="http://yoursite.com/2018/08/02/DIN/index.html">
-<meta property="og:site_name" content="Utopia">
-<meta property="og:description" content="深度兴趣网络(DIN,Deep Interest Network)该方法由阿里妈妈的精准定向检索及基础算法团队提出, 针对电子商务领域(e-commerce industry), 充分利用/挖掘用户历史行为数据中的信息来提高CTR预估的性能.">
-<meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://m.qpic.cn/psb?/V11gTDw808BAxG/uBE3QGw56m.TuZofwjttjXcLMk8fL.*zOAnYckmDUmY!/b/dDcBAAAAAAAA&bo=rQJsAQAAAAADB.A!&rf=viewer_4">
-<meta property="og:image" content="http://m.qpic.cn/psb?/V11gTDw808BAxG/bBDR5jPDMvmvlyTjhewXaHHj8HKSPEjsGyb8rMr2JL4!/b/dFQBAAAAAAAA&bo=RgKXAQAAAAADB*A!&rf=viewer_4">
-<meta property="og:image" content="http://m.qpic.cn/psb?/V11gTDw808BAxG/aYWcCNLUt05TILihJenXsXQjPeMLT80hXYV4ddlYwec!/b/dFIBAAAAAAAA&bo=mAQWAgAAAAADB6o!&rf=viewer_4">
-<meta property="og:image" content="http://m.qpic.cn/psb?/V11gTDw808BAxG/3eUYzoalKe8lORISK*mhy6**ehmFg.LYhrALM*.PLP8!/b/dC0BAAAAAAAA&bo=RwKTAAAAAAADB*Q!&rf=viewer_4">
-<meta property="og:image" content="http://m.qpic.cn/psb?/V11gTDw808BAxG/AYTF6fcUkY5tf4cSRsizITCr9Fa3KrkOwSigfqZ40WI!/b/dDcBAAAAAAAA&bo=LQKTAQAAAAADB58!&rf=viewer_4">
-<meta property="og:image" content="http://m.qpic.cn/psb?/V11gTDw808BAxG/2J1*5c6Ub0YwDUWBQ8HWRYcNR0W*56JYXJfYfv2wlzY!/b/dFQBAAAAAAAA&bo=IAKfAQAAAAADB54!&rf=viewer_4">
-<meta property="og:image" content="http://m.qpic.cn/psb?/V11gTDw808BAxG/7UBtAZnlugACT1Uj9yrI.NXEkUVjJccRcY6*LZx5mCw!/b/dDEBAAAAAAAA&bo=mAOEAAAAAAADBz0!&rf=viewer_4">
-<meta property="og:image" content="http://m.qpic.cn/psb?/V11gTDw808BAxG/OG3lB58Co5uvJw7ZaR4ODjCXWQS.9zng0cgwmRku9E8!/b/dEYBAAAAAAAA&bo=OwJsAgAAAAADB3U!&rf=viewer_4">
-<meta property="og:image" content="http://m.qpic.cn/psb?/V11gTDw808BAxG/eF2wAEwI65Sf53Vm4xsHygG2df3ohJ6ZIqrCixFBzTE!/b/dDUBAAAAAAAA&bo=vQL.AAAAAAADB2M!&rf=viewer_4">
-<meta property="og:image" content="http://m.qpic.cn/psb?/V11gTDw808BAxG/IAVbs7OEsmJDXIYM59RUA5oq6nh8KO1lgVlZW8huUEY!/b/dDUBAAAAAAAA&bo=jwWzAgAAAAADBxk!&rf=viewer_4">
-<meta property="og:updated_time" content="2018-09-25T14:35:37.000Z">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="深度兴趣网络(DIN,Deep Interest Network)">
-<meta name="twitter:description" content="深度兴趣网络(DIN,Deep Interest Network)该方法由阿里妈妈的精准定向检索及基础算法团队提出, 针对电子商务领域(e-commerce industry), 充分利用/挖掘用户历史行为数据中的信息来提高CTR预估的性能.">
-<meta name="twitter:image" content="http://m.qpic.cn/psb?/V11gTDw808BAxG/uBE3QGw56m.TuZofwjttjXcLMk8fL.*zOAnYckmDUmY!/b/dDcBAAAAAAAA&bo=rQJsAQAAAAADB.A!&rf=viewer_4">
-
-
-
-<script type="text/javascript" id="hexo.configurations">
+<script id="hexo-configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
     scheme: 'Muse',
-    version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":true},
+    version: '7.4.0',
+    exturl: false,
+    sidebar: {"position":"right","display":"hide","offset":12,"onmobile":true},
+    copycode: {"enable":true,"show_result":true,"style":"mac"},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":true},
+    bookmark: {"enable":true,"color":"#222","save":"auto"},
     fancybox: true,
-    tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"slideLeftIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    duoshuo: {
-      userId: '0',
-      author: '博主'
-    },
+    mediumzoom: false,
+    lazyload: true,
+    pangu: false,
     algolia: {
-      applicationID: '',
+      appID: '',
       apiKey: '',
       indexName: '',
       hits: {"per_page":10},
       labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    }
+    },
+    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":true,"preload":false},
+    path: 'search.xml',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    translation: {
+      copy_button: '复制',
+      copy_success: '复制成功',
+      copy_failure: '复制失败'
+    },
+    sidebarPadding: 40
   };
 </script>
 
+  <meta name="description" content="深度兴趣网络(DIN,Deep Interest Network)该方法由阿里妈妈的精准定向检索及基础算法团队提出, 针对电子商务领域(e-commerce industry), 充分利用/挖掘用户历史行为数据中的信息来提高CTR预估的性能.">
+<meta name="keywords" content="推荐系统">
+<meta property="og:type" content="article">
+<meta property="og:title" content="深度兴趣网络(DIN,Deep Interest Network)">
+<meta property="og:url" content="https://running-bad-ai.github.io/2018/08/02/DIN/index.html">
+<meta property="og:site_name" content="Utopia">
+<meta property="og:description" content="深度兴趣网络(DIN,Deep Interest Network)该方法由阿里妈妈的精准定向检索及基础算法团队提出, 针对电子商务领域(e-commerce industry), 充分利用/挖掘用户历史行为数据中的信息来提高CTR预估的性能.">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-09-25T14:40:14.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="深度兴趣网络(DIN,Deep Interest Network)">
+<meta name="twitter:description" content="深度兴趣网络(DIN,Deep Interest Network)该方法由阿里妈妈的精准定向检索及基础算法团队提出, 针对电子商务领域(e-commerce industry), 充分利用/挖掘用户历史行为数据中的信息来提高CTR预估的性能.">
+  <link rel="canonical" href="https://running-bad-ai.github.io/2018/08/02/DIN/">
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/08/02/DIN/"/>
-
-
-
-
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true,
+    isPage: false,
+    isArchive: false
+  };
+</script>
 
   <title>深度兴趣网络(DIN,Deep Interest Network) | Utopia</title>
   
@@ -154,40 +96,53 @@
 
 
 
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
 </head>
 
-
-
-
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
-
-  
-  
-    
-  
-
-  <div class="container sidebar-position-left page-post-detail">
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+  <div class="container use-motion">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta ">
-    
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
 
-    <div class="custom-logo-site-title">
-      <a href="/"  class="brand" rel="start">
+    <div>
+      <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">Utopia</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
-      
-        <p class="site-subtitle">better  to  be  a  witty  fool  than  a  foolish  wit</p>
+        <h1 class="site-subtitle" itemprop="description">better  to  be  a  witty  fool  than  a  foolish  wit</h1>
       
   </div>
 
   <div class="site-nav-toggle">
-    <button>
+    <button aria-label="切换导航栏">
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
@@ -195,118 +150,118 @@
   </div>
 </div>
 
+
 <nav class="site-nav">
   
-
-  
-    <ul id="menu" class="menu">
+  <ul id="menu" class="menu">
+      
+      
       
         
         <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
-            
-            首页
-          </a>
-        </li>
+      
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+      
+      
       
         
         <li class="menu-item menu-item-about">
-          <a href="/about/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
-            
-            关于
-          </a>
-        </li>
+      
+    
+
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
+
+  </li>
+      
+      
       
         
         <li class="menu-item menu-item-tags">
-          <a href="/tags/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
-            
-            标签
-          </a>
-        </li>
+      
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+
+  </li>
+      
+      
       
         
         <li class="menu-item menu-item-categories">
-          <a href="/categories/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
-            
-            分类
-          </a>
-        </li>
+      
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
+
+  </li>
+      
+      
       
         
         <li class="menu-item menu-item-archives">
-          <a href="/archives/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
-            
-            归档
-          </a>
-        </li>
+      
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+
+  </li>
+      
+      
       
         
         <li class="menu-item menu-item-top">
-          <a href="/top/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-signal"></i> <br />
-            
-            top
-          </a>
-        </li>
       
+    
 
-      
-        <li class="menu-item menu-item-search">
-          
-            <a href="javascript:;" class="popup-trigger">
-          
-            
-              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
-            
-            搜索
-          </a>
-        </li>
-      
-    </ul>
-  
+    <a href="/top/" rel="section"><i class="menu-item-icon fa fa-fw fa-signal"></i> <br>热门</a>
 
-  
-    <div class="site-search">
-      
-  <div class="popup search-popup local-search-popup">
-  <div class="local-search-header clearfix">
-    <span class="search-icon">
-      <i class="fa fa-search"></i>
-    </span>
-    <span class="popup-btn-close">
-      <i class="fa fa-times-circle"></i>
-    </span>
-    <div class="local-search-input-wrapper">
-      <input autocomplete="off"
-             placeholder="搜索..." spellcheck="false"
-             type="text" id="local-search-input">
-    </div>
-  </div>
-  <div id="local-search-result"></div>
-</div>
+  </li>
+      <li class="menu-item menu-item-search">
+        <a href="javascript:;" class="popup-trigger">
+        
+          <i class="menu-item-icon fa fa-search fa-fw"></i> <br>搜索</a>
+      </li>
+    
+  </ul>
 
+    
 
-
-    </div>
-  
 </nav>
+  <div class="site-search">
+    <div class="popup search-popup">
+    <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="none"
+           placeholder="搜索..." spellcheck="false"
+           type="text" id="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result"></div>
 
+</div>
+<div class="search-pop-overlay"></div>
 
-
- </div>
+  </div>
+</div>
     </header>
+	
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <a class="book-mark-link book-mark-link-fixed" href="#"></a>
+
 
     <main id="main" class="main">
       <div class="main-inner">
@@ -315,75 +270,49 @@
             
 
   <div id="posts" class="posts-expand">
-    
-
-  
-
+      <article itemscope itemtype="http://schema.org/Article">
   
   
   
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/02/DIN/">
+  <div class="post-block post">
+    <link itemprop="mainEntityOfPage" href="https://running-bad-ai.github.io/2018/08/02/DIN/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="wang yang">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="一个生活爱好者">
       <meta itemprop="image" content="/images/avatar.png">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Utopia">
     </span>
-
-    
       <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">深度兴趣网络(DIN,Deep Interest Network)
 
-        
-        
-          <h1 class="post-title" itemprop="name headline">深度兴趣网络(DIN,Deep Interest Network)</h1>
-        
+          
+        </h2>
 
         <div class="post-meta">
-          <span class="post-time">
-            
+            <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
+              <span class="post-meta-item-text">发表于</span>
+
               
-                <span class="post-meta-item-text">发表于</span>
+                
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-02T01:03:52+08:00">
-                2018-08-02
-              </time>
-            
 
-            
-
-            
-          </span>
-
+              <time title="创建时间：2018-08-02 01:03:52" itemprop="dateCreated datePublished" datetime="2018-08-02T01:03:52+08:00">2018-08-02</time>
+            </span>
           
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
+            <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
+              <span class="post-meta-item-text">分类于</span>
               
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/推荐系统/" itemprop="url" rel="index">
-                    <span itemprop="name">推荐系统</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/推荐系统/" itemprop="url" rel="index"><span itemprop="name">推荐系统</span></a></span>
 
                 
                 
@@ -392,44 +321,24 @@
           
 
           
-            
+            <span id="/2018/08/02/DIN/" class="post-meta-item leancloud_visitors" data-flag-title="深度兴趣网络(DIN,Deep Interest Network)" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
           
-
-          
-          
-             <span id="/2018/08/02/DIN/" class="leancloud_visitors" data-flag-title="深度兴趣网络(DIN,Deep Interest Network)">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-              <div class="post-description">
-                  深度兴趣网络(DIN,Deep Interest Network)该方法由阿里妈妈的精准定向检索及基础算法团队提出, 针对电子商务领域(e-commerce industry), 充分利用/挖掘用户历史行为数据中的信息来提高CTR预估的性能.
-              </div>
+            <div class="post-description">深度兴趣网络(DIN,Deep Interest Network)该方法由阿里妈妈的精准定向检索及基础算法团队提出, 针对电子商务领域(e-commerce industry), 充分利用/挖掘用户历史行为数据中的信息来提高CTR预估的性能.</div>
           
 
         </div>
       </header>
-    
 
     
     
     
     <div class="post-body" itemprop="articleBody">
-
-      
-      
 
       
         <script src="/assets/js/APlayer.min.js"> </script><p class="description"></p>
@@ -455,26 +364,26 @@
 <ol start="4">
 <li>Features:  </li>
 </ol>
-<p><img src="http://m.qpic.cn/psb?/V11gTDw808BAxG/uBE3QGw56m.TuZofwjttjXcLMk8fL.*zOAnYckmDUmY!/b/dDcBAAAAAAAA&amp;bo=rQJsAQAAAAADB.A!&amp;rf=viewer_4" alt="example"><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">只有用户行为特征是multi-hot, 即多值离散.  </span><br><span class="line">没有人工组合特征, 会在dnn中自己学习.</span><br></pre></td></tr></table></figure></p>
+<p><img alt="example" data-src="http://m.qpic.cn/psb?/V11gTDw808BAxG/uBE3QGw56m.TuZofwjttjXcLMk8fL.*zOAnYckmDUmY!/b/dDcBAAAAAAAA&amp;bo=rQJsAQAAAAADB.A!&amp;rf=viewer_4"><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">只有用户行为特征是multi-hot, 即多值离散.  </span><br><span class="line">没有人工组合特征, 会在dnn中自己学习.</span><br></pre></td></tr></table></figure></p>
 <hr>
 <ol start="5">
 <li>Architecture:  </li>
 </ol>
-<p><img src="http://m.qpic.cn/psb?/V11gTDw808BAxG/bBDR5jPDMvmvlyTjhewXaHHj8HKSPEjsGyb8rMr2JL4!/b/dFQBAAAAAAAA&amp;bo=RgKXAQAAAAADB*A!&amp;rf=viewer_4" alt="architecture"><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Activation Unit实现Attention机制, 对Local Activation建模.  </span><br><span class="line">Pooling(weighted sum)对Diversity建模, 直接sum体现不出差异多样性, 加权可以.</span><br></pre></td></tr></table></figure></p>
-<p><img src="http://m.qpic.cn/psb?/V11gTDw808BAxG/aYWcCNLUt05TILihJenXsXQjPeMLT80hXYV4ddlYwec!/b/dFIBAAAAAAAA&amp;bo=mAQWAgAAAAADB6o!&amp;rf=viewer_4" alt="architecture">  </p>
-<p><img src="http://m.qpic.cn/psb?/V11gTDw808BAxG/3eUYzoalKe8lORISK*mhy6**ehmFg.LYhrALM*.PLP8!/b/dC0BAAAAAAAA&amp;bo=RwKTAAAAAAADB*Q!&amp;rf=viewer_4" alt="formula"><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">其中：  </span><br><span class="line">Vi表示behavior id的嵌入向量, 比如good_id, shop_id等;  </span><br><span class="line">Vu是所有behavior ids的加权和, 表示的是用户兴趣;  </span><br><span class="line">Va是候选广告的嵌入向量;    </span><br><span class="line">wi是候选广告影响着每个behavior id的权重, 也就是Local Activation;  </span><br><span class="line">wi通过Activation Unit计算得出, 这一块用函数去拟合, 表示为g(Vi,Va).  </span><br><span class="line"></span><br><span class="line">在实际实现中, 权重用激活函数Dice的输出来表示, 输入是Vi和Va.  </span><br><span class="line">优点：针对不同的候选广告, 用户的兴趣向量是不同的, 而不像单纯的sum pooling兴趣永远是不变的.</span><br></pre></td></tr></table></figure></p>
+<p><img alt="architecture" data-src="http://m.qpic.cn/psb?/V11gTDw808BAxG/bBDR5jPDMvmvlyTjhewXaHHj8HKSPEjsGyb8rMr2JL4!/b/dFQBAAAAAAAA&amp;bo=RgKXAQAAAAADB*A!&amp;rf=viewer_4"><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Activation Unit实现Attention机制, 对Local Activation建模.  </span><br><span class="line">Pooling(weighted sum)对Diversity建模, 直接sum体现不出差异多样性, 加权可以.</span><br></pre></td></tr></table></figure></p>
+<p><img alt="architecture" data-src="http://m.qpic.cn/psb?/V11gTDw808BAxG/aYWcCNLUt05TILihJenXsXQjPeMLT80hXYV4ddlYwec!/b/dFIBAAAAAAAA&amp;bo=mAQWAgAAAAADB6o!&amp;rf=viewer_4">  </p>
+<p><img alt="formula" data-src="http://m.qpic.cn/psb?/V11gTDw808BAxG/3eUYzoalKe8lORISK*mhy6**ehmFg.LYhrALM*.PLP8!/b/dC0BAAAAAAAA&amp;bo=RwKTAAAAAAADB*Q!&amp;rf=viewer_4"><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">其中：  </span><br><span class="line">Vi表示behavior id的嵌入向量, 比如good_id, shop_id等;  </span><br><span class="line">Vu是所有behavior ids的加权和, 表示的是用户兴趣;  </span><br><span class="line">Va是候选广告的嵌入向量;    </span><br><span class="line">wi是候选广告影响着每个behavior id的权重, 也就是Local Activation;  </span><br><span class="line">wi通过Activation Unit计算得出, 这一块用函数去拟合, 表示为g(Vi,Va).  </span><br><span class="line"></span><br><span class="line">在实际实现中, 权重用激活函数Dice的输出来表示, 输入是Vi和Va.  </span><br><span class="line">优点：针对不同的候选广告, 用户的兴趣向量是不同的, 而不像单纯的sum pooling兴趣永远是不变的.</span><br></pre></td></tr></table></figure></p>
 <hr>
 <ol start="6">
 <li>DICE: data adaptive activation function:  </li>
 </ol>
-<p><img src="http://m.qpic.cn/psb?/V11gTDw808BAxG/AYTF6fcUkY5tf4cSRsizITCr9Fa3KrkOwSigfqZ40WI!/b/dDcBAAAAAAAA&amp;bo=LQKTAQAAAAADB58!&amp;rf=viewer_4" alt="dice"><br>类似relu + BN 的组合:  </p>
-<p><img src="http://m.qpic.cn/psb?/V11gTDw808BAxG/2J1*5c6Ub0YwDUWBQ8HWRYcNR0W*56JYXJfYfv2wlzY!/b/dFQBAAAAAAAA&amp;bo=IAKfAQAAAAADB54!&amp;rf=viewer_4" alt="derivative">  </p>
+<p><img alt="dice" data-src="http://m.qpic.cn/psb?/V11gTDw808BAxG/AYTF6fcUkY5tf4cSRsizITCr9Fa3KrkOwSigfqZ40WI!/b/dDcBAAAAAAAA&amp;bo=LQKTAQAAAAADB58!&amp;rf=viewer_4"><br>类似relu + BN 的组合:  </p>
+<p><img alt="derivative" data-src="http://m.qpic.cn/psb?/V11gTDw808BAxG/2J1*5c6Ub0YwDUWBQ8HWRYcNR0W*56JYXJfYfv2wlzY!/b/dFQBAAAAAAAA&amp;bo=IAKfAQAAAAADB54!&amp;rf=viewer_4">  </p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">优点:  </span><br><span class="line">1.将数据做标准化估计, 统一所有维度的量纲, 也是个非常重要的技巧, 有点类似BN.</span><br><span class="line">--在训练过程中, 分别是当次batch的均值和方差.</span><br><span class="line">--在Test时, 这里的E[s]和Var[s]用的是moving_average.</span><br><span class="line">2.可以发现当E[s]=0,  Var[s]=0 时, Dice几乎等同于PRELU.</span><br><span class="line">3.ϵ is a small constant which is set to be 10−8 in our practice.</span><br></pre></td></tr></table></figure>
 <hr>
 <ol start="7">
 <li>GAUC: 计算了用户级别的AUC, 在将其按展示次数进行加权, 消除了用户偏差对模型评价的影响, 更准确地描述了模型对于每个用户的表现效果  </li>
 </ol>
-<p><img src="http://m.qpic.cn/psb?/V11gTDw808BAxG/7UBtAZnlugACT1Uj9yrI.NXEkUVjJccRcY6*LZx5mCw!/b/dDEBAAAAAAAA&amp;bo=mAOEAAAAAAADBz0!&amp;rf=viewer_4" alt="GAUC">  </p>
+<p><img alt="GAUC" data-src="http://m.qpic.cn/psb?/V11gTDw808BAxG/7UBtAZnlugACT1Uj9yrI.NXEkUVjJccRcY6*LZx5mCw!/b/dDEBAAAAAAAA&amp;bo=mAOEAAAAAAADBz0!&amp;rf=viewer_4">  </p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">AUC意义: AUC值越大, 当前的分类算法越有可能将正样本排在负样本前面, 即能够更好的分类.</span><br><span class="line"></span><br><span class="line">首先要肯定的是, AUC是要分用户看的, 我们的模型的预测结果, 只要能够保证对每个用户来说, 他想要的结果排在前面就好了.</span><br><span class="line"></span><br><span class="line">Example 1：</span><br><span class="line">假设有两个用户A和B, 每个用户都有10个商品, 10个商品中有5个是正样本.</span><br><span class="line">我们分别用TA, TB, FA, FB来表示两个用户的正样本和负样本.</span><br><span class="line">假设模型预测的结果大小排序依次为TA, FA, TB, FB</span><br><span class="line">1）如果把两个用户的结果混起来看, AUC并不是很高, 因为有5个正样本排在了后面.</span><br><span class="line">2）但是分开看的话, 每个用户的正样本都排在了负样本之前, AUC应该是1.显然, 分开看更容易体现模型的效果, 这样消除了用户本身的差异.</span><br><span class="line"></span><br><span class="line">Example 2：</span><br><span class="line">还有一种差异是用户的展示次数或者点击数, 这种差异同样需要消除.</span><br><span class="line">如果一个用户有1个正样本, 10个负样本; 另一个用户有5个正样本, 50个负样本.</span><br><span class="line">那么GAUC的计算, 不仅将每个用户的AUC分开计算, 同时根据用户的展示数或者点击数来对每个用户的AUC进行加权处理, 进一步消除了用户偏差对模型的影响.</span><br><span class="line"></span><br><span class="line">通过实验证明, GAUC确实是一个更加合理的评价指标.</span><br></pre></td></tr></table></figure>
 <hr>
 <ol start="8">
@@ -482,14 +391,14 @@
 </ol>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">场景:</span><br><span class="line">CTR中输入稀疏而且维度高, 通常的做法是加入L1、L2、Dropout等防止过拟合.</span><br><span class="line">--但是论文中尝试后效果都不是很好：用户数据符合长尾定律(long-tail law), 也就是说很多的feature id只出现了几次, 而一小部分feature id出现很多次.</span><br><span class="line">--这在训练过程中增加了很多噪声, 并且加重了过拟合.</span><br><span class="line">对于这个问题一个简单的处理办法就是：</span><br><span class="line">--直接去掉出现次数比较少的feature id.但是这样就人为的丢掉了一些信息, 导致模型更加容易过拟合.</span><br><span class="line">--同时阈值的设定作为一个新的超参数, 也是需要大量的实验来选择的.</span><br><span class="line"></span><br><span class="line">MBA的优点:</span><br><span class="line">1.频率自适应     </span><br><span class="line">2.每次迭代只更新非0部分权重,减少计算量</span><br></pre></td></tr></table></figure>
 <p>原理:  </p>
-<p><img src="http://m.qpic.cn/psb?/V11gTDw808BAxG/OG3lB58Co5uvJw7ZaR4ODjCXWQS.9zng0cgwmRku9E8!/b/dEYBAAAAAAAA&amp;bo=OwJsAgAAAAADB3U!&amp;rf=viewer_4" alt="MBA">  </p>
+<p><img alt="MBA" data-src="http://m.qpic.cn/psb?/V11gTDw808BAxG/OG3lB58Co5uvJw7ZaR4ODjCXWQS.9zng0cgwmRku9E8!/b/dEYBAAAAAAAA&amp;bo=OwJsAgAAAAADB3U!&amp;rf=viewer_4">  </p>
 <hr>
 <ol start="9">
 <li>效果:   </li>
 </ol>
-<p><img src="http://m.qpic.cn/psb?/V11gTDw808BAxG/eF2wAEwI65Sf53Vm4xsHygG2df3ohJ6ZIqrCixFBzTE!/b/dDUBAAAAAAAA&amp;bo=vQL.AAAAAAADB2M!&amp;rf=viewer_4" alt="results">  </p>
+<p><img alt="results" data-src="http://m.qpic.cn/psb?/V11gTDw808BAxG/eF2wAEwI65Sf53Vm4xsHygG2df3ohJ6ZIqrCixFBzTE!/b/dDUBAAAAAAAA&amp;bo=vQL.AAAAAAADB2M!&amp;rf=viewer_4">  </p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">利用候选的广告, 反向激活历史兴趣, 不同的历史兴趣爱好对于当前候选广告的权重不同, 做到了local activation.</span><br><span class="line">--可以看到, 对于候选的广告是一件衣服的时候, 用户历史行为中跟衣服相关性越高的在attention后获得的权重越高（即越能描述用户对这个广告的兴趣）, 而非衣服的部分, 权重较低.</span><br></pre></td></tr></table></figure>
-<p><img src="http://m.qpic.cn/psb?/V11gTDw808BAxG/IAVbs7OEsmJDXIYM59RUA5oq6nh8KO1lgVlZW8huUEY!/b/dDUBAAAAAAAA&amp;bo=jwWzAgAAAAADBxk!&amp;rf=viewer_4" alt="results">  </p>
+<p><img alt="results" data-src="http://m.qpic.cn/psb?/V11gTDw808BAxG/IAVbs7OEsmJDXIYM59RUA5oq6nh8KO1lgVlZW8huUEY!/b/dDUBAAAAAAAA&amp;bo=jwWzAgAAAAADBxk!&amp;rf=viewer_4">  </p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">以上面年轻妈妈为例, 选取9个类别各100条商品, 作为candidate ad输入模型, 得到每件商品的embedding vector以及预测得分.</span><br><span class="line">进行可视化如上图, 红色表示得分最高, 蓝色表示得分最低,可以发现：</span><br><span class="line">--用户的兴趣分布有多个峰.且DIN有较好的聚类效果.</span><br></pre></td></tr></table></figure>
 <hr>
 <ol start="10">
@@ -508,135 +417,94 @@
 <hr>
 
 
-      
     </div>
-    
-    
-    
 
     
-
     
-      <div>
-        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center;">
+  <img id="wechat_subscriber_qcode" src="/images/subscribe_img.jpg" alt="wang yang wechat" style="width: 200px; max-width: 100%;">
+  <div></div>
+</div>
+
+      
+        
+      
+        <div id="reward-container">
   <div>欢迎加好友</div>
-  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
-    <span>打赏</span>
+  <button id="reward-button" disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
   </button>
-  <div id="QR" style="display: none;">
-
-    
-      <div id="wechat" style="display: inline-block">
-        <img id="wechat_qr" src="/images/wechat1.jpeg" alt="wang yang 微信支付"/>
+  <div id="qr" style="display: none;">
+        
+      
+      <div style="display: inline-block">
+        <img src="/images/wechat1.jpeg" alt="wang yang 微信支付">
         <p>微信支付</p>
       </div>
-    
-
-    
-
-    
 
   </div>
 </div>
 
-      </div>
-    
+      
+        
 
-    
-      <div>
-        <ul class="post-copyright">
+<div>
+<ul class="post-copyright">
   <li class="post-copyright-author">
-    <strong>本文作者：</strong>
-    wang yang
-  </li>
-  <li class="post-copyright-link">
-    <strong>本文链接：</strong>
-    <a href="http://yoursite.com/2018/08/02/DIN/" title="深度兴趣网络(DIN,Deep Interest Network)">http://yoursite.com/2018/08/02/DIN/</a>
-  </li>
+    <strong>作者： </strong>wang yang</li>
+
   <li class="post-copyright-license">
-    <strong>版权声明： </strong>
-    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
-  </li>
+    <strong>版权： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/cc by-nc-sa 3.0/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！</li>
 </ul>
+</div>
 
-      </div>
+      
+
+      <footer class="post-footer">
+          
+            
+          
+          <div class="post-tags">
+            
+              <a href="/tags/推荐系统/" rel="tag"><i class="fa fa-tag"></i> 推荐系统</a>
+            
+          </div>
+        
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
+              
+                <a href="/2018/08/02/4/" rel="next" title="4">
+                  <i class="fa fa-chevron-left"></i> 4
+                </a>
+              
+            </div>
+
+            <span class="post-nav-divider"></span>
+
+            <div class="post-nav-prev post-nav-item">
+              
+            </div>
+          </div>
+        
+      </footer>
     
-
-    <footer class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/tags/推荐系统/" rel="tag"><i class="fa fa-tag"></i> 推荐系统</a>
-          
-        </div>
-      
-
-      
-      
-        <div class="post-widgets">
-        
-
-        
-
-        
-          
-          <div id="needsharebutton-postbottom">
-            <span class="btn">
-              <i class="fa fa-share-alt" aria-hidden="true"></i>
-            </span>
-          </div>
-        
-        </div>
-      
-      
-
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/2018/08/02/3/" rel="next" title="反垃圾">
-                <i class="fa fa-chevron-left"></i> 反垃圾
-              </a>
-            
-          </div>
-
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-            
-          </div>
-        </div>
-      
-
-      
-      
-    </footer>
   </div>
   
   
   
   </article>
 
-
-
-    <div class="post-spread">
-      
-    </div>
   </div>
 
 
           </div>
           
 
-
-          
-
-  
-
-
-
         </div>
-        
           
   
   <div class="sidebar-toggle">
@@ -647,201 +515,244 @@
     </div>
   </div>
 
-  <aside id="sidebar" class="sidebar">
-    
-      <div id="sidebar-dimmer"></div>
-    
+  <aside class="sidebar">
     <div class="sidebar-inner">
-
+        
+        
+        
+        
       
 
-      
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
 
-
-      <section class="site-overview-wrap sidebar-panel">
-        <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-            
-            <a href="/">
-              <img class="site-author-image" itemprop="image"
-                src="/images/avatar.png"
-                alt="wang yang" />
-            </a>
-            
-              <p class="site-author-name" itemprop="name">wang yang</p>
-              <p class="site-description motion-element" itemprop="description">一个生活爱好者</p>
-          </div>
-
-          <nav class="site-state motion-element">
-
-            
-              <div class="site-state-item site-state-posts">
-              
-                <a href="/archives/">
-              
-                  <span class="site-state-item-count">4</span>
-                  <span class="site-state-item-name">日志</span>
-                </a>
-              </div>
-            
-
-            
-              
-              
-              <div class="site-state-item site-state-categories">
-                <a href="/categories/index.html">
-                  <span class="site-state-item-count">3</span>
-                  <span class="site-state-item-name">分类</span>
-                </a>
-              </div>
-            
-
-            
-              
-              
-              <div class="site-state-item site-state-tags">
-                <a href="/tags/index.html">
-                  <span class="site-state-item-count">3</span>
-                  <span class="site-state-item-name">标签</span>
-                </a>
-              </div>
-            
-
-          </nav>
-
-          
-
-          
-            <div class="links-of-author motion-element">
-                
-                  <span class="links-of-author-item">
-                    <a href="https://github.com/running-Bad-AI/" target="_blank" title="GitHub">
-                      
-                        <i class="fa fa-fw fa-github"></i>GitHub</a>
-                  </span>
-                
-                  <span class="links-of-author-item">
-                    <a href="https://weibo.com/p/1005051974568411" target="_blank" title="Weibo">
-                      
-                        <i class="fa fa-fw fa-weibo"></i>Weibo</a>
-                  </span>
-                
-                  <span class="links-of-author-item">
-                    <a href="https://music.163.com/#/user/home?id=95398532" target="_blank" title="网易云">
-                      
-                        <i class="fa fa-fw fa-music"></i>网易云</a>
-                  </span>
-                
-                  <span class="links-of-author-item">
-                    <a href="https://www.zhihu.com/people/wang-yang-44-8/activities" target="_blank" title="知乎">
-                      
-                        <i class="fa fa-fw fa-zhihu"></i>知乎</a>
-                  </span>
-                
-                  <span class="links-of-author-item">
-                    <a href="1033990170@qq.com" target="_blank" title="E-Mail">
-                      
-                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
-                  </span>
-                
-                  <span class="links-of-author-item">
-                    <a href="https://www.facebook.com/" target="_blank" title="facebook">
-                      
-                        <i class="fa fa-fw fa-facebook-f"></i>facebook</a>
-                  </span>
-                
-            </div>
-          
-
-          
-          
-
-          
-          
-
-          
-
-        </div>
-      </section>
-
-      
       <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Deep-Interest-Network-阿里深度兴趣网络"><span class="nav-number">1.</span> <span class="nav-text">Deep Interest Network: 阿里深度兴趣网络</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#摘要"><span class="nav-number">1.1.</span> <span class="nav-text">摘要</span></a></li></ol></li></ol></div>
-            
-
-          </div>
-        </section>
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Deep-Interest-Network-阿里深度兴趣网络"><span class="nav-number">1.</span> <span class="nav-text">Deep Interest Network: 阿里深度兴趣网络</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#摘要"><span class="nav-number">1.1.</span> <span class="nav-text">摘要</span></a></li></ol></li></ol></div>
+        
+      </div>
       <!--/noindex-->
-      
 
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image"
+      src="/images/avatar.png"
+      alt="wang yang">
+  <p class="site-author-name" itemprop="name">wang yang</p>
+  <div class="site-description" itemprop="description">一个生活爱好者</div>
+</div>
+  <nav class="site-state motion-element">
+      <div class="site-state-item site-state-posts">
+        
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+    
       
+      
+      <div class="site-state-item site-state-categories">
+        
+          
+            <a href="/categories/">
+          
+        
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">分类</span>
+        </a>
+      </div>
+    
+      
+      
+      <div class="site-state-item site-state-tags">
+        
+          
+            <a href="/tags/">
+          
+        
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">标签</span>
+        </a>
+      </div>
+    
+  </nav>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+      
+      
+        
+      
+      
+        
+      
+        <a href="https://github.com/running-Bad-AI/" title="GitHub &rarr; https://github.com/running-Bad-AI/" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+    
+      <span class="links-of-author-item">
+      
+      
+        
+      
+      
+        
+      
+        <a href="https://weibo.com/p/1005051974568411" title="Weibo &rarr; https://weibo.com/p/1005051974568411" rel="noopener" target="_blank"><i class="fa fa-fw fa-weibo"></i>Weibo</a>
+      </span>
+    
+      <span class="links-of-author-item">
+      
+      
+        
+      
+      
+        
+      
+        <a href="https://music.163.com/#/user/home?id=95398532" title="网易云 &rarr; https://music.163.com/#/user/home?id=95398532" rel="noopener" target="_blank"><i class="fa fa-fw fa-music"></i>网易云</a>
+      </span>
+    
+      <span class="links-of-author-item">
+      
+      
+        
+      
+      
+        
+      
+        <a href="https://www.zhihu.com/people/wang-yang-44-8/activities" title="知乎 &rarr; https://www.zhihu.com/people/wang-yang-44-8/activities" rel="noopener" target="_blank"><i class="fa fa-fw fa-zhihu"></i>知乎</a>
+      </span>
+    
+  </div>
+
+
+
+      </div>
 
     </div>
   </aside>
+  <div id="sidebar-dimmer"></div>
 
 
-        
       </div>
     </main>
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
-  <span class="with-love" id="heart">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
     <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">wang yang</span>
-
-  
 </div>
-
-
-
-
-
-
-
-
 
         
-<div class="busuanzi-count">
-  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
-  
-    <span class="site-uv">
-      <i class="fa fa-user"></i>
-      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
-      
-    </span>
-  
-
-  
-    <span class="site-pv">
-      <i class="fa fa-eye"></i>
-      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
-      
-    </span>
-  
-</div>
 
 
+
+
+
+
+  
+  <script>
+  function leancloudSelector(url) {
+    return document.getElementById(url).querySelector('.leancloud-visitors-count');
+  }
+  if (CONFIG.page.isPost) {
+    function addCount(Counter) {
+      var visitors = document.querySelector('.leancloud_visitors');
+      var url = visitors.getAttribute('id').trim();
+      var title = visitors.getAttribute('data-flag-title').trim();
+
+      Counter('get', `/classes/Counter?where=${JSON.stringify({ url })}`)
+        .then(response => response.json())
+        .then(({ results }) => {
+          if (results.length > 0) {
+            var counter = results[0];
+            Counter('put', '/classes/Counter/' + counter.objectId, { time: { '__op': 'Increment', 'amount': 1 } })
+              .then(response => response.json())
+              .then(() => {
+                leancloudSelector(url).innerText = counter.time + 1;
+              })
+            
+              .catch(error => {
+                console.log('Failed to save visitor count', error);
+              })
+          } else {
+              leancloudSelector(url).innerText = 'Counter not initialized! More info at console err msg.';
+              console.error('ATTENTION! LeanCloud counter has security bug, see how to solve it here: https://github.com/theme-next/hexo-leancloud-counter-security. \n However, you can still use LeanCloud without security, by setting `security` option to `false`.');
+            
+          }
+        })
+        .catch(error => {
+          console.log('LeanCloud Counter Error', error);
+        });
+    }
+  } else {
+    function showTime(Counter) {
+      var visitors = document.querySelectorAll('.leancloud_visitors');
+      var entries = [...visitors].map(element => {
+        return element.getAttribute('id').trim();
+      });
+
+      Counter('get', `/classes/Counter?where=${JSON.stringify({ url: { '$in': entries } })}`)
+        .then(response => response.json())
+        .then(({ results }) => {
+          if (results.length === 0) {
+            document.querySelectorAll('.leancloud_visitors .leancloud-visitors-count').forEach(element => {
+              element.innerText = 0;
+            });
+            return;
+          }
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.url;
+            var time = item.time;
+            leancloudSelector(url).innerText = time;
+          }
+          for (var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = leancloudSelector(url);
+            if (element.innerText == '') {
+              element.innerText = 0;
+            }
+          }
+        })
+        .catch(error => {
+          console.log('LeanCloud Counter Error', error);
+        });
+    }
+  }
+
+  fetch('https://app-router.leancloud.cn/2/route?appId=sQUeoA3nxJrYuWh3supLuVh4-gzGzoHsz')
+    .then(response => response.json())
+    .then(({ api_server }) => {
+      var Counter = (method, url, data) => {
+        return fetch(`https://${api_server}/1.1${url}`, {
+          method: method,
+          headers: {
+            'X-LC-Id': 'sQUeoA3nxJrYuWh3supLuVh4-gzGzoHsz',
+            'X-LC-Key': 'NPlxbxYv45a1wH43dI2xGO22',
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(data)
+        });
+      };
+      if (CONFIG.page.isPost) {
+        const localhost = /http:\/\/(localhost|127.0.0.1|0.0.0.0)/;
+        if (localhost.test(document.URL)) return;
+        addCount(Counter);
+      } else if (document.querySelectorAll('.post-title-link').length >= 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
 
 
 
@@ -851,612 +762,54 @@
         
       </div>
     </footer>
-
-    
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-          <span id="scrollpercent"><span>0</span>%</span>
-        
-      </div>
-    
-
-    
-
   </div>
 
   
 
-<script type="text/javascript">
-  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
-    window.Promise = null;
-  }
-</script>
 
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-  
-  
-
-
-
-
-
-
-
-  
-  
-    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/three/three.min.js"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/three/canvas_lines.min.js"></script>
-  
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
-
-
-
-  
-  
-
-  
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
-
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
-
-
-
-  
-
-
-  
-
-
-
-
-	
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-  <script type="text/javascript">
-    // Popup Window;
-    var isfetched = false;
-    var isXml = true;
-    // Search DB path;
-    var search_path = "search.xml";
-    if (search_path.length === 0) {
-      search_path = "search.xml";
-    } else if (/json$/i.test(search_path)) {
-      isXml = false;
-    }
-    var path = "/" + search_path;
-    // monitor main search box;
-
-    var onPopupClose = function (e) {
-      $('.popup').hide();
-      $('#local-search-input').val('');
-      $('.search-result-list').remove();
-      $('#no-result').remove();
-      $(".local-search-pop-overlay").remove();
-      $('body').css('overflow', '');
-    }
-
-    function proceedsearch() {
-      $("body")
-        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
-        .css('overflow', 'hidden');
-      $('.search-popup-overlay').click(onPopupClose);
-      $('.popup').toggle();
-      var $localSearchInput = $('#local-search-input');
-      $localSearchInput.attr("autocapitalize", "none");
-      $localSearchInput.attr("autocorrect", "off");
-      $localSearchInput.focus();
-    }
-
-    // search function;
-    var searchFunc = function(path, search_id, content_id) {
-      'use strict';
-
-      // start loading animation
-      $("body")
-        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
-          '<div id="search-loading-icon">' +
-          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
-          '</div>' +
-          '</div>')
-        .css('overflow', 'hidden');
-      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
-
-      $.ajax({
-        url: path,
-        dataType: isXml ? "xml" : "json",
-        async: true,
-        success: function(res) {
-          // get the contents from search data
-          isfetched = true;
-          $('.popup').detach().appendTo('.header-inner');
-          var datas = isXml ? $("entry", res).map(function() {
-            return {
-              title: $("title", this).text(),
-              content: $("content",this).text(),
-              url: $("url" , this).text()
-            };
-          }).get() : res;
-          var input = document.getElementById(search_id);
-          var resultContent = document.getElementById(content_id);
-          var inputEventFunction = function() {
-            var searchText = input.value.trim().toLowerCase();
-            var keywords = searchText.split(/[\s\-]+/);
-            if (keywords.length > 1) {
-              keywords.push(searchText);
-            }
-            var resultItems = [];
-            if (searchText.length > 0) {
-              // perform local searching
-              datas.forEach(function(data) {
-                var isMatch = false;
-                var hitCount = 0;
-                var searchTextCount = 0;
-                var title = data.title.trim();
-                var titleInLowerCase = title.toLowerCase();
-                var content = data.content.trim().replace(/<[^>]+>/g,"");
-                var contentInLowerCase = content.toLowerCase();
-                var articleUrl = decodeURIComponent(data.url);
-                var indexOfTitle = [];
-                var indexOfContent = [];
-                // only match articles with not empty titles
-                if(title != '') {
-                  keywords.forEach(function(keyword) {
-                    function getIndexByWord(word, text, caseSensitive) {
-                      var wordLen = word.length;
-                      if (wordLen === 0) {
-                        return [];
-                      }
-                      var startPosition = 0, position = [], index = [];
-                      if (!caseSensitive) {
-                        text = text.toLowerCase();
-                        word = word.toLowerCase();
-                      }
-                      while ((position = text.indexOf(word, startPosition)) > -1) {
-                        index.push({position: position, word: word});
-                        startPosition = position + wordLen;
-                      }
-                      return index;
-                    }
-
-                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
-                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
-                  });
-                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
-                    isMatch = true;
-                    hitCount = indexOfTitle.length + indexOfContent.length;
-                  }
-                }
-
-                // show search results
-
-                if (isMatch) {
-                  // sort index by position of keyword
-
-                  [indexOfTitle, indexOfContent].forEach(function (index) {
-                    index.sort(function (itemLeft, itemRight) {
-                      if (itemRight.position !== itemLeft.position) {
-                        return itemRight.position - itemLeft.position;
-                      } else {
-                        return itemLeft.word.length - itemRight.word.length;
-                      }
-                    });
-                  });
-
-                  // merge hits into slices
-
-                  function mergeIntoSlice(text, start, end, index) {
-                    var item = index[index.length - 1];
-                    var position = item.position;
-                    var word = item.word;
-                    var hits = [];
-                    var searchTextCountInSlice = 0;
-                    while (position + word.length <= end && index.length != 0) {
-                      if (word === searchText) {
-                        searchTextCountInSlice++;
-                      }
-                      hits.push({position: position, length: word.length});
-                      var wordEnd = position + word.length;
-
-                      // move to next position of hit
-
-                      index.pop();
-                      while (index.length != 0) {
-                        item = index[index.length - 1];
-                        position = item.position;
-                        word = item.word;
-                        if (wordEnd > position) {
-                          index.pop();
-                        } else {
-                          break;
-                        }
-                      }
-                    }
-                    searchTextCount += searchTextCountInSlice;
-                    return {
-                      hits: hits,
-                      start: start,
-                      end: end,
-                      searchTextCount: searchTextCountInSlice
-                    };
-                  }
-
-                  var slicesOfTitle = [];
-                  if (indexOfTitle.length != 0) {
-                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
-                  }
-
-                  var slicesOfContent = [];
-                  while (indexOfContent.length != 0) {
-                    var item = indexOfContent[indexOfContent.length - 1];
-                    var position = item.position;
-                    var word = item.word;
-                    // cut out 100 characters
-                    var start = position - 20;
-                    var end = position + 80;
-                    if(start < 0){
-                      start = 0;
-                    }
-                    if (end < position + word.length) {
-                      end = position + word.length;
-                    }
-                    if(end > content.length){
-                      end = content.length;
-                    }
-                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
-                  }
-
-                  // sort slices in content by search text's count and hits' count
-
-                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
-                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
-                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
-                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
-                      return sliceRight.hits.length - sliceLeft.hits.length;
-                    } else {
-                      return sliceLeft.start - sliceRight.start;
-                    }
-                  });
-
-                  // select top N slices in content
-
-                  var upperBound = parseInt('1');
-                  if (upperBound >= 0) {
-                    slicesOfContent = slicesOfContent.slice(0, upperBound);
-                  }
-
-                  // highlight title and content
-
-                  function highlightKeyword(text, slice) {
-                    var result = '';
-                    var prevEnd = slice.start;
-                    slice.hits.forEach(function (hit) {
-                      result += text.substring(prevEnd, hit.position);
-                      var end = hit.position + hit.length;
-                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
-                      prevEnd = end;
-                    });
-                    result += text.substring(prevEnd, slice.end);
-                    return result;
-                  }
-
-                  var resultItem = '';
-
-                  if (slicesOfTitle.length != 0) {
-                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
-                  } else {
-                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
-                  }
-
-                  slicesOfContent.forEach(function (slice) {
-                    resultItem += "<a href='" + articleUrl + "'>" +
-                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
-                      "...</p>" + "</a>";
-                  });
-
-                  resultItem += "</li>";
-                  resultItems.push({
-                    item: resultItem,
-                    searchTextCount: searchTextCount,
-                    hitCount: hitCount,
-                    id: resultItems.length
-                  });
-                }
-              })
-            };
-            if (keywords.length === 1 && keywords[0] === "") {
-              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
-            } else if (resultItems.length === 0) {
-              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
-            } else {
-              resultItems.sort(function (resultLeft, resultRight) {
-                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
-                  return resultRight.searchTextCount - resultLeft.searchTextCount;
-                } else if (resultLeft.hitCount !== resultRight.hitCount) {
-                  return resultRight.hitCount - resultLeft.hitCount;
-                } else {
-                  return resultRight.id - resultLeft.id;
-                }
-              });
-              var searchResultList = '<ul class=\"search-result-list\">';
-              resultItems.forEach(function (result) {
-                searchResultList += result.item;
-              })
-              searchResultList += "</ul>";
-              resultContent.innerHTML = searchResultList;
-            }
-          }
-
-          if ('auto' === 'auto') {
-            input.addEventListener('input', inputEventFunction);
-          } else {
-            $('.search-icon').click(inputEventFunction);
-            input.addEventListener('keypress', function (event) {
-              if (event.keyCode === 13) {
-                inputEventFunction();
-              }
-            });
-          }
-
-          // remove loading animation
-          $(".local-search-pop-overlay").remove();
-          $('body').css('overflow', '');
-
-          proceedsearch();
-        }
-      });
-    }
-
-    // handle and trigger popup window;
-    $('.popup-trigger').click(function(e) {
-      e.stopPropagation();
-      if (isfetched === false) {
-        searchFunc(path, 'local-search-input', 'local-search-result');
-      } else {
-        proceedsearch();
-      };
-    });
-
-    $('.popup-btn-close').click(onPopupClose);
-    $('.popup').click(function(e){
-      e.stopPropagation();
-    });
-    $(document).on('keyup', function (event) {
-      var shouldDismissSearchPopup = event.which === 27 &&
-        $('.search-popup').is(':visible');
-      if (shouldDismissSearchPopup) {
-        onPopupClose();
-      }
-    });
-  </script>
-
-
-
-
-
-  
-
-  
-  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
-  <script>AV.initialize("sQUeoA3nxJrYuWh3supLuVh4-gzGzoHsz", "NPlxbxYv45a1wH43dI2xGO22");</script>
-  <script>
-    function showTime(Counter) {
-      var query = new AV.Query(Counter);
-      var entries = [];
-      var $visitors = $(".leancloud_visitors");
-
-      $visitors.each(function () {
-        entries.push( $(this).attr("id").trim() );
-      });
-
-      query.containedIn('url', entries);
-      query.find()
-        .done(function (results) {
-          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
-
-          if (results.length === 0) {
-            $visitors.find(COUNT_CONTAINER_REF).text(0);
-            return;
-          }
-
-          for (var i = 0; i < results.length; i++) {
-            var item = results[i];
-            var url = item.get('url');
-            var time = item.get('time');
-            var element = document.getElementById(url);
-
-            $(element).find(COUNT_CONTAINER_REF).text(time);
-          }
-          for(var i = 0; i < entries.length; i++) {
-            var url = entries[i];
-            var element = document.getElementById(url);
-            var countSpan = $(element).find(COUNT_CONTAINER_REF);
-            if( countSpan.text() == '') {
-              countSpan.text(0);
-            }
-          }
-        })
-        .fail(function (object, error) {
-          console.log("Error: " + error.code + " " + error.message);
-        });
-    }
-
-    function addCount(Counter) {
-      var $visitors = $(".leancloud_visitors");
-      var url = $visitors.attr('id').trim();
-      var title = $visitors.attr('data-flag-title').trim();
-      var query = new AV.Query(Counter);
-
-      query.equalTo("url", url);
-      query.find({
-        success: function(results) {
-          if (results.length > 0) {
-            var counter = results[0];
-            counter.fetchWhenSave(true);
-            counter.increment("time");
-            counter.save(null, {
-              success: function(counter) {
-                var $element = $(document.getElementById(url));
-                $element.find('.leancloud-visitors-count').text(counter.get('time'));
-              },
-              error: function(counter, error) {
-                console.log('Failed to save Visitor num, with error message: ' + error.message);
-              }
-            });
-          } else {
-            var newcounter = new Counter();
-            /* Set ACL */
-            var acl = new AV.ACL();
-            acl.setPublicReadAccess(true);
-            acl.setPublicWriteAccess(true);
-            newcounter.setACL(acl);
-            /* End Set ACL */
-            newcounter.set("title", title);
-            newcounter.set("url", url);
-            newcounter.set("time", 1);
-            newcounter.save(null, {
-              success: function(newcounter) {
-                var $element = $(document.getElementById(url));
-                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
-              },
-              error: function(newcounter, error) {
-                console.log('Failed to create');
-              }
-            });
-          }
-        },
-        error: function(error) {
-          console.log('Error:' + error.code + " " + error.message);
-        }
-      });
-    }
-
-    $(function() {
-      var Counter = AV.Object.extend("Counter");
-      if ($('.leancloud_visitors').length == 1) {
-        addCount(Counter);
-      } else if ($('.post-title-link').length > 1) {
-        showTime(Counter);
-      }
-    });
-  </script>
-
-
-
-  
-
-  
-
-  
-  
-  
-  <link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css">
-
-  
-  
-  <script src="/lib/needsharebutton/needsharebutton.js"></script>
-
-  <script>
-    
-      pbOptions = {};
-      
-          pbOptions.iconStyle = "box";
-      
-          pbOptions.boxForm = "horizontal";
-      
-          pbOptions.position = "bottomCenter";
-      
-          pbOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
-      
-      new needShareButton('#needsharebutton-postbottom', pbOptions);
     
     
-  </script>
+  
+    
+  
+  <script color='0,0,255' opacity='0.5' zIndex='-1' count='99' src="true"></script>
+  <script src="/lib/anime.min.js?v=3.1.0"></script>
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js"></script>
+  <script defer src="/lib/three/three.min.js"></script>
+  <script defer src="/lib/three/canvas_lines.min.js"></script>
+<script src="/js/utils.js?v=7.4.0"></script><script src="/js/motion.js?v=7.4.0"></script>
+<script src="/js/schemes/muse.js?v=7.4.0"></script>
+<script src="/js/next-boot.js?v=7.4.0"></script><script src="/js/bookmark.js?v=7.4.0"></script>
+
+
+
+  
+
+
+
+
+
+
+
+
+  <script src="/js/local-search.js?v=7.4.0"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   
 
@@ -1464,23 +817,6 @@
 
   
 
-  
-
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>;
-  <script>  
-  $("body").backstretch("http://m.qpic.cn/psb?/V11gTDw834StyS/bkTgPSQlRV1q.0bVOrFmMUsB5r8H2l1G6xfII6*bJSg!/b/dDUBAAAAAAAA&bo=gAc4BAAAAAARB4s!&rf=viewer_4");
-  </script>
-
-
-   <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
-   <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
-   <script type="text/javascript" src="/js/src/fireworks.js"></script>
-
-
-
-<!-- 页面点击小红心 -->
-<script type="text/javascript" src="/js/src/love.js"></script>
 
 </body>
 </html>
